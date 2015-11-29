@@ -1,0 +1,14 @@
+﻿<Window x:Class="SumMvvm.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="Sum Calculator" Height="132.09" Width="392.164">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding x}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="149,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding y}"/>
+        <Button Content="Sum" HorizontalAlignment="Left" Margin="296,9,0,0" VerticalAlignment="Top" Width="75" Command="{Binding SumCommand}"/>
+        <TextBox x:Name="TextBoxZ" HorizontalAlignment="Left" Height="23" Margin="82,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding z}"/>
+
+    </Grid>
+</Window>
